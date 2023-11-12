@@ -3,10 +3,9 @@ import sqlite3
 import matplotlib.backends.backend_pdf
 import matplotlib.pyplot as plt
 
-# SQL bazasiga bog'lanish
+
 connection = sqlite3.connect('question.db')
 
-# SQL so'rovni yozing
 sql_query = '''
 SELECT Questions.id, Questions.quests, Variants.A, Variants.B, Variants.C, Variants.D
 FROM Questions
@@ -32,5 +31,4 @@ for index, row in df.iterrows():
     pdf_pages.savefig(fig, bbox_inches='tight')
     plt.close(fig)
 
-# PDF faylni yopish
 pdf_pages.close()

@@ -96,3 +96,5 @@ connection.close()
 # cursor.execute("SELECT Questions.id, Questions.quests, Variants.A, Variants.B, Variants.C, Variants.D FROM Questions INNER JOIN Variants ON Questions.var_id = Variants.id")
 
 # manimcha tugattim
+
+# tugadi
